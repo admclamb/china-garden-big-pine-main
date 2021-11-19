@@ -1,1 +1,1 @@
-# chinese-restaurant
+# chinese-restaurant made with front end technologies

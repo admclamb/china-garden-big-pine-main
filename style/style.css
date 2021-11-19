@@ -9,7 +9,9 @@
 /* Hero */
 
 .hero-content {
-  background-color: var(--color-main);
+  background: url(../img/goodeats-yqr-O0AsEdqEzPQ-unsplash.jpg);
+  background-position: top;
+  background-size: cover;
   color: var(--color-light);
   display: flex;
   flex-direction: column;

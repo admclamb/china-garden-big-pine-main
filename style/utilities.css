@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+a {
+  color: inherit;
+}
+
 :root {
   --color-main: rgb(192, 14, 14);
   --color-main--hover: rgb(124, 9, 9);
@@ -72,6 +76,7 @@ p {
 .btn--main {
   background-color: var(--color-main);
   color: var(--color-light);
+  padding: 0.8rem;
   border-radius: 2rem;
 }
 

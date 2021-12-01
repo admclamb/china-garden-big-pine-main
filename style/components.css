@@ -15,10 +15,21 @@
 
 /* Navbar */
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   padding: 1rem 5%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav--links {
@@ -29,4 +40,10 @@
 
 .nav--links:hover {
   color: var(--color-main);
+}
+
+.hours {
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }

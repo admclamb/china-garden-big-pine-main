@@ -18,6 +18,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 1rem 5%;
+  background-color: var(--color-main);
+  color: var;
 }
 
 .logo {

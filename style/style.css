@@ -7,14 +7,6 @@
 }
 
 /* Hero */
-.jumbotron {
-  height: 80vh;
-  background: url(../img/goodeats-yqr-O0AsEdqEzPQ-unsplash.jpg);
-  background-position: top;
-  background-size: cover;
-  color: var(--color-light);
-  padding-top: 10rem;
-}
 
 .hero-content {
   background: url(../img/goodeats-yqr-O0AsEdqEzPQ-unsplash.jpg);

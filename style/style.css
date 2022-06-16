@@ -6,21 +6,15 @@
   font-size: 1.414rem;
 }
 
-/* Hero */
-
-.hero-content {
-  background: url(../img/goodeats-yqr-O0AsEdqEzPQ-unsplash.jpg);
-  background-position: top;
-  background-size: cover;
-  color: var(--color-light);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 80vh;
+.spicy {
+  color: var(--color-main);
 }
 
-.hero-content--main {
-  line-height: 1;
-  text-align: center;
+.spicy::after {
+  content: '🌶';
+  font-family: FontAwesome;
+}
+
+.special-combination-platters {
+  border: double 2px var(--color-main);
 }

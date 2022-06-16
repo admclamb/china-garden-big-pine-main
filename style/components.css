@@ -14,21 +14,9 @@
 }
 
 /* Navbar */
-.navbar {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 1rem 5%;
-}
-
-.logo {
+.navbar div {
   display: flex;
-  align-items: center;
-}
-
-.nav {
-  list-style: none;
-  display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -38,12 +26,106 @@
   color: var(--color-dark);
 }
 
-.nav--links:hover {
-  color: var(--color-main);
-}
-
 .hours {
   display: flex;
   align-items: center;
   justify-content: end;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  padding: 1.3rem 1.8rem;
+  text-decoration: none;
+  color: var(--color-dark);
+}
+
+.nav-link:hover {
+  color: var(--color-main);
+}
+
+.nav-links a:not(:last-child) {
+  margin-right: 0.4rem;
+}
+
+.nav-help {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero */
+
+.hero-content {
+  background-color: var(--color-dark);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.253),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../img/goodeats-yqr-O0AsEdqEzPQ-unsplash.jpg);
+
+  background-position: top;
+  background-size: cover;
+  color: var(--color-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.hero-content--main {
+  line-height: 1;
+  text-align: center;
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  color: var(--color-main--light);
+}
+
+/* Menu */
+.menu {
+  margin-inline: auto;
+}
+
+.menu-header {
+  text-align: center;
+}
+
+.menu-header--sub {
+  color: var(--color-main);
+}
+
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Order options */
+
+.order-options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.order-options--content:last-child {
+  background-color: var(--color-main);
+  color: var(--color-light);
+}
+
+.order-options--content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 17rem;
 }

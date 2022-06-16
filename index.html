@@ -4,8 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Begin google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End google fonts -->
+    <!-- Begin bootstrap  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- End bootstrap -->
+
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
@@ -18,313 +33,350 @@
   </head>
   <body>
     <header>
-      <div class="banner">
-        <a href="#">See Our Covid-19 Protocols</a>
-      </div>
-      <nav class="navbar">
-        <section class="logo">
-          <h1 class="logo--text" img src="../img/logo.jpg">Your logo</h1>
-        </section>
-        <section class="nav">
-          <a href="#" class="nav--links">About</a>
-          <a href="#" class="nav--links">Menu</a>
-          <a href="#" class="nav--links">Contact</a>
-        </section>
-        <section class="order-online">
-          <a href="#" class="btn btn--main">Reservations</a>
-          <a href="#" class="btn btn--main">Our Hours</a>
-        </section>
+      <nav class="navbar fixed-top navbar-light bg-light border-bottom">
+        <div class="container">
+          <h1 class="navbar-brand">Big Pine Restaurant</h1>
+          <ul class="nav-links">
+            <li><a href="#" class="nav-link">About</a></li>
+            <li><a href="#" class="nav-link">Menu</a></li>
+            <li><a href="#" class="nav-link">Contact</a></li>
+          </ul>
+          <ul class="nav-help">
+            <li><a href="#" class="nav-link">Phone: (305) 872-8861</a></li>
+            <li><a href="#" class="nav-link">Order Online</a></li>
+          </ul>
+        </div>
       </nav>
       <section class="hero-content">
-        <h1 class="hero-content--main mb-3" style="color:red">
-          China Garden<br />
-          Big Pine Restaurant
-        </h1>
+        <h1 class="hero-content--main mb-3">China Garden</h1>
         <p class="hero-content--sub mb-3">
-          The restaurant serves authentic asian food
+          Authentic asian cuisine in Big Pine
         </p>
-        <a href="#" class="btn btn--outline-light btn--3d">Our Menu</a>
+        <a href="#menu" class="btn btn--outline-light btn--3d">Our Menu</a>
       </section>
-
-      <section class="Menu">
-
-
-        <center><h1>Takeout Menu</h1>
-          <h5 style="color:red">Red Character Indicates The Item Is Spicy</h5>
-        </center>
-        <center><p id="demo">
-          </p></center>
-        <ul style="width:30%; float:left; padding-left: 20px;">
-          <h4>Appetizer</h4>
-          <li> Spring Roll(2) </li>
-          <li> Vegetarian Spring Roll(2) </li>
-          <li> Egg Roll(2) </li>
-          <li> Shrimp Toast(4) </li>
-          <li> BBQ Spare Ribs Small/Large </li>
-          <li> Boneless BBQ Rib Small/Large </li>
-          <li> Chinese Roast Pork Small/Large </li>
-          <li> Fried Wonton </li>
-          <li> Fantail Shrimp(5) </li>
-          <li> Chicken Wing </li>
-          <li> Fried/Steamed Dumpling(8) </li>
-          <li> BBQ Steak(2) </li>
-          <li> Krab Rangoon(8) </li>
-          <li> Pu-Pu Platter </li>
-          <br>
-
-          <h4>Soup</h4>
-          <li>Wonton Soup Pint/Quart</li>
-          <li>Egg Drop Soup Pint/Quart</li>
-          <li>Chicken Rice/Noodle Soup Pint/Quart</li>
-          <li style="color:red">Hot & Sour Soup Pint/Quart</li>
-          <li>Subgum Wonton Soup</li>
-          <li>Vegetable Soup</li>
-          <br>
-
-          <h4>Chow Mein</h4>
-          <li>Chicken Chow Mein Pint/Quart</li>
-          <li>Roast Pork Chow Mein Pint/Quart</li>
-          <li>Vegetable Chow Mein Pint/Quart</li>
-          <li>Shrimp Chow Mein Pint/Quart</li>
-          <li>Beef Chow Mein Pint/Quart</li>
-          <li>China Garden Chow Mein Pint/Quart</li>
-          <br>
-
-          <h4>Chop Suey</h4>
-          <li>Chicken Chop Suey Pint/Quart</li>
-          <li>Roast Pork Chop Suey Pint/Quart</li>
-          <li>Vegetable Chop Suey Pint/Quart</li>
-          <li>Shrimp Chop Suey Pint/Quart</li>
-          <li>Beef Chop Suey Pint/Quart</li>
-          <li>Seafood Chop Suey Pint/Quart</li>
-          <br>
-
-          <h4>Fried Rice</h4>
-          <li>Steamed Rice Pint/Quart</li>
-          <li>Roast Pork Fried Rice Pint/Quart</li>
-          <li>Vegetable Fried Rice Pint/Quart</li>
-          <li>Chicken Fried Rice Pint/Quart</li>
-          <li>Shrimp Fried Rice Pint/Quart</li>
-          <li>Beef Fried Rice Pint/Quart</li>
-          <li>Subgum Fried Rice Pint/Quart</li>
-          <li>Seafood Fried Rice Pint/Quart</li>
-          <li>Special Fried Rice Pint/Quart</li>
-          <br>
-
-          <h4>Lo Mein</h4>
-          <li>Vegetable Lo Mein</li>
-          <li>Roast Pork Lo Mein</li>
-          <li>Chicken Lo Mein</li>
-          <li>Shrimp Lo Mein</li>
-          <li>Beef Lo Mein</li>
-          <li>Seafood Lo Mein</li>
-          <li>China Garden Lo Mein</li>
-          <br>
-
-          <h4>Chow Mei Fun</h4>
-          <li>Vegetable Chow Mei Fun</li>
-          <li>Roast Pork Chow Mei Fun</li>
-          <li>Chicken Chow Mei Fun</li>
-          <li>Shrimp Chow Mei Fun</li>
-          <li>Beef Chow Mei Fun</li>
-          <li>Seafood Chow Mei Fun</li>
-          <li>China Garden Chow Mei Fun</li>
-          <br>
-
-          <h4>Egg Foo Young</h4>
-          <li>Roast Pork Chow Mei Fun</li>
-          <li>Vegetable Chow Mei Fun</li>
-          <li>Shrimp Chow Mei Fun</li>
-          <li>Chicken Chow Mei Fun</li>
-          <li>Ham Chow Mei Fun</li>
-          <li>China Garden Chow Mei Fun</li>
-          <br>
-
-          <h4>Sweet & Sour</h4>
-          <li>Honey Chicken</li>
-          <li>Sweet & Sour Pork</li>
-          <li>Sweet & Sour Shrimp</li>
-          <li>Sweet & Sour Chicken</li>
-          <li>Sweet & Sour Supreme</li>
-          <br>
-        </ul>
-
-        <ul style="width:30%; float:left; padding-left: 20px;">
-          <h4>Chicken</h4>
-          <li>Moo Goo Gai Pan</li>
-          <li>Chicken with Almonds</li>
-          <li>Chicken with Cashew Nuts</li>
-          <li style="color:red">Curry Chicken</li>
-          <li>Chicken with Broccoli</li>
-          <li style="color:red">Kung Pao Chicken</li>
-          <li style="color:red">Hunan Chicken</li>
-          <li style="color:red">Chicken with Garlic Sauce</li>
-          <li style="color:red">Orange Chicken</li>
-          <li style="color:red">Muk Shu Chicken(with Pancake)</li>
-          <li style="color:red">General Tso's Chicken</li>
-          <li style="color:red">Sesame Chicken</li>
-          <li>Chicken with Snow Peas</li>
-          <li>Cantonese Chicken Chow Mein</li>
-          <li>Lemon Chicken</li>
-          <li style="color:red">Sichuan Chicken</li>
-          <br>
-
-          <h4>Pork</h4>
-          <li style="color:red">Pork with Garlic</li>
-          <li style="color:red">Moo Shu Pork(with Pancakes)</li>
-          <li>Roast Pork with Mixed Vegetable</li>
-          <li style="color:red">Pork in Szechuan Sauce</li>
-          <li>Roast Pork with Snow Peas</li>
-          <br>
-
-          <h4>Beef</h4>
-          <li>Beef with Chinese Vegetables</li>
-          <li>Beef with Bean Sprouts</li>
-          <li>Beef with Broccoli</li>
-          <li>Beef with Snow Peas</li>
-          <li>Beef with Mushroom</li>
-          <li>Beef with Black Bean Sauce</li>
-          <li>Beef with Oyster Sauce</li>
-          <li style="color:red">Beef with Garlic Sauce</li>
-          <li style="color:red">Hunan Beef</li>
-          <li style="color:red">Szechuan Beef</li>
-          <li style="color:red">Mongolian Beef</li>
-          <li style="color:red">Orange Beef</li>
-          <li>Cantonese Beef Chow Mein</li>
-          <li>Pepper Steak with Onion</li>
-          <br>
-
-          <h4>Chef Special</h4>
-          <li>Happy Family</li>
-          <li style="color:red">Vegetable with Fried Tofu</li>
-          <li style="color:red">Eggplant with Garlic Sauce</li>
-          <li style="color:red">Szechuan Vegetable</li>
-          <li style="color:red">Four Seasons</li>
-          <li style="color:red">Chicken & Shrimp in Hunan Style</li>
-          <li>Vegetables Delight with Tofu</li>
-          <li style="color:red">Broccoli with Garlic Sauce</li>
-          <br>
-
-          <h4>Seafood</h4>
-          <li>Shrimp with Chinese Vegetables</li>
-          <li>Jumbo Shrimp with Lobster Sauce</li>
-          <li>Shrimp with Cashew Nuts</li>
-          <li>Shrimp with Broccoli</li>
-          <li>Shrimp with Black Bean Sauce</li>
-          <li style="color:red">Curry Shrimp with Onion</li>
-          <li>Shrimp with Oyster Sauce</li>
-          <li>Seafood Delight</li>
-          <li style="color:red">Kung Pao Shrimp</li>
-          <li style="color:red">Scallops with Garlic Sauce</li>
-          <li style="color:red">Hunan Shrimp</li>
-          <br>
-
-          <h4>Combo</h4>
-          <li>Chicken Chow Mein</li>
-          <li>Shrimp Chow Mein</li>
-          <li>Pork Egg Foo Young</li>
-          <li>Moo Goo Gai Pan</li>
-          <li>Green Pepper Steak</li>
-          <li>Barbecued Spare Ribs</li>
-          <li>Shrimp with Lobster Sauce</li>
-          <li>Roast Pork w. Chinese Vegetables</li>
-          <li>Sweet & Sour Pork</li>
-          <li>Sweet & Sour Chicken</li>
-          <li>Chicken with Broccoli</li>
-          <li>Beef with Broccoli</li>
-          <li style="color:red">General Tso's Chicken</li>
-          <li style="color:red">Kung Pao Chicken</li>
-          <br>
-        </ul>
-
-        <ul style="width:30%; float:left; padding-left: 20px;">
-          <h4>Diet Dish</h4>
-          <li>Steamed Mixed Vegetable</li>
-          <li>Steamed Chicken with Broccoli</li>
-          <li>Steamed Shrimp with Mixed Vegetables</li>
-          <li>Steamed Chicken with Mixed Vegetables</li>
-          <li>Steamed Shrimp with Broccoli</li>
-          <li>Steamed Mix Vegetable & Tofu</li>
-          <br>
-
-          <h4>Drink</h4>
-          <li>Bottle Water</li>
-          <li>Coke</li>
-          <li>Sprite</li>
-          <li>Diet Coke</li>
-          <li>Pepsi</li>
-          <li>Mountain Dew</li>
-          <br>
-
-          <h4>Side Order</h4>
-          <li>Fried Noodle</li>
-          <li>Half Pint of Mustard</li>
-          <li>Half Pint of Duck Sauce</li>
-          <li>Half Pint of Garlic Sauce</li>
-          <li>Half Pint of Hot Chili Oil</li>
-          <li>Fortune Cookies</li>
-          <br>
-
-          <h4>Lunch Special</h4>
-          <li>Vegetable Delight</li>
-          <li>Chicken Chow Mein</li>
-          <li>Pork Chow Mein</li>
-          <li>Chicken Egg Foo Young</li>
-          <li>Pork Egg Foo Young</li>
-          <li>Moo Goo Gai Pan</li>
-          <li>Pork Lo Mein</li>
-          <li>Chicken Lo Mein</li>
-          <li>Beef Lo Mein</li>
-          <li>Chicken Almond</li>
-          <li>Pork with Chinese Vegetable</li>
-          <li style="color:red">Sesame Chicken</li>
-          <li style="color:red">General Tso's Chicken</li>
-          <li style="color:red">Hunan Chicken</li>
-          <li style="color:red">Hunan Beef</li>
-          <li style="color:red">Sichuan Chicken</li>
-          <li style="color:red">Sichuan Beef</li>
-          <li>Shrimp with Cashew Nuts</li>
-          <li style="color:red">Kung Pao Chicken</li>
-          <li>Shrimp Lo Mein</li>
-          <li>Shrimp Chop Suey</li>
-          <li>Chicken with Broccoli</li>
-          <li>Beef with Broccoli</li>
-          <li>Sweet and Sour Chicken</li>
-          <li>Sweet and Sour Pork</li>
-          <li>Honey Chicken</li>
-          <li style="color:red">Chicken with Garlic Sauce</li>
-          <li style="color:red">Beef with Garlic Sauce</li>
-          <li style="color:red">Pork with Garlic Sauce</li>
-          <li>Beef with Snow Peas</li>
-          <li>Chicken with Snow Peas</li>
-          <br>
-        </ul>
-
-        <script>
-            let appetizer = ["Spring Roll(2)", "Vegetarian Spring Roll(2)", "Egg Roll(2), "Shrimp Toast(4)","BBQ Spare Ribs Small/Large", "Boneless BBQ Rib Small/Large", "Chinese Roast Pork Small/Large", "Fried Wonton", "Fantail Shrimp(5)", "Chicken Wing", "Fried/Steamed Dumpling(8)", "BBQ Steak(2)", "Krab Rangoon(8)", "Pu-Pu Platter"];
-            let soup = ["Wonton Soup Pint/Quart", "Egg Drop Soup Pint/Quart", "Chicken Rice/Noodle Soup Pint/Quart", "Hot & Sour Soup Pint/Quart", "Subgum Wonton Soup", "Vegetable Soup"]
-            let chowmein = ["Chicken Chow Mein Pint/Quart", "Roast Pork Chow Mein Pint/Quart", "Vegetable Chow Mein Pint/Quart", "Shrimp Chow Mein Pint/Quart", "Beef Chow Mein Pint/Quart", "China Garden Chow Mein Pint/Quart"]
-            let chopsuey = ["Chicken Chop Suey Pint/Quart", "Roast Pork Chop Suey Pint/Quart", "Vegetable Chop Suey Pint/Quart", "Shrimp Chop Suey Pint/Quart", "Beef Chop Suey Pint/Quart", "Seafood Chop Suey Pint/Quart"]
-            let friedrice = ["Steamed Rice Pint/Quart", "Roast Pork Fried Rice Pint/Quart", "Vegetable Fried Rice Pint/Quart", "Chicken Fried Rice Pint/Quart", "Shrimp Fried Rice Pint/Quart", "Beef Fried Rice Pint/Quart", "Subgum Fried Rice Pint/Quart", "Seafood Fried Rice Pint/Quart", "Special Fried Rice Pint/Quart"]
-            let lomein = ["Vegetable Lo Mein ", "Roast Pork Lo Mein ", "Chicken Lo Mein ", "Shrimp Lo Mein ", "Beef Lo Mein ", "Seafood Lo Mein ", "China Garden Lo Mein "]
-            let chowmeifun = ["Vegetable Chow Mei Fun ", "Roast Pork Chow Mei Fun ", "Chicken Chow Mei Fun ", "Shrimp Chow Mei Fun ", "Beef Chow Mei Fun ", "Seafood Chow Mei Fun ", "China Garden Chow Mei Fun "]
-            let eggfooyoung = ["Roast Pork Chow Mei Fun ", "Vegetable Chow Mei Fun ", "Shrimp Chow Mei Fun ", "Chicken Chow Mei Fun ", "Ham Chow Mei Fun ", "China Garden Chow Mei Fun "]
-            let sweetsour = ["Honey Chicken", "Sweet & Sour Pork", "Sweet & Sour Shrimp", "Sweet & Sour Chicken", "Sweet & Sour Supreme"]
-            let chicken = ["Moo Goo Gai Pan", "Chicken with Almonds", "Chicken with Cashew Nuts", "Curry Chicken", "Chicken with Broccoli", "Kung Pao Chicken", "Hunan Chicken", "Chicken with Garlic Sauce", "Orange Chicken", "Muk Shu Chicken(with Pancake)", "General Tso's Chicken", "Sesame Chicken", "Chicken with Snow Peas", "Cantonese Chicken Chow Mein", "Lemon Chicken", "Sichuan Chicken"]
-            let pork = ["Pork with Garlic", "Moo Shu Pork(with Pancakes)", "Roast Pork with Mixed Vegetable", "Pork in Szechuan Sauce", "Roast Pork with Snow Peas"]
-            let beef = ["Beef with Chinese Vegetables", "Beef with Bean Sprouts", "Beef with Broccoli", "Beef with Snow Peas", "Beef with Mushroom", "Beef with Black Bean Sauce", "Beef with Oyster Sauce", "Beef with Garlic Sauce", "Hunan Beef", "Szechuan Beef", "Mongolian Beef", "Orange Beef", "Cantonese Beef Chow Mein", "Pepper Steak with Onion"]
-            let chefspecial = ["Happy Family", "Vegetable with Fried Tofu", "Eggplant with Garlic Sauce", "Szechuan Vegetable", "Four Seasons", "Chicken & Shrimp in Hunan Style", "Vegetables Delight with Tofu", "Broccoli with Garlic Sauce"]
-            let seafood = ["Shrimp with Chinese Vegetables", "Jumbo Shrimp with Lobster Sauce", "Shrimp with Cashew Nuts", "Shrimp with Broccoli", "Shrimp with Black Bean Sauce", "Curry Shrimp with Onion", "Shrimp with Oyster Sauce", "Seafood Delight", "Kung Pao Shrimp", "Scallops with Garlic Sauce", "Hunan Shrimp"]
-            let combo = ["Chicken Chow Mein", "Shrimp Chow Mein", "Pork Egg Foo Young", "Moo Goo Gai Pan", "Green Pepper Steak", "Barbecued Spare Ribs", "Shrimp with Lobster Sauce", "Roast Pork w. Chinese Vegetables", "Sweet & Sour Pork", "Sweet & Sour Chicken", "Chicken with Broccoli", "Beef with Broccoli", "General Tso's Chicken", "Kung Pao Chicken"]
-            let dietdish = ["Steamed Mixed Vegetable", "Steamed Chicken with Broccoli", "Steamed Shrimp with Mixed Vegetables", "Steamed Chicken with Mixed Vegetables", "Steamed Shrimp with Broccoli", "Steamed Mix Vegetable & Tofu"]
-            let drink = ["Bottle Water", "Coke", "Sprite", "Diet Coke", "Pepsi", "Mountain Dew", "Homemade Iced Tea Small/Large", "Hot Tea Small/Large"]
-            let sideorder = ["Fried Noodle", "Half Pint of Mustard", "Half Pint of Duck Sauce", "Half Pint of Garlic Sauce", "Half Pint of Hot Chili Oil", "Fortune Cookies"]
-            let lunchspecial =["Vegetable Delight", "Chicken Chow Mein", "Pork Chow Mein", "Chicken Egg Foo Young", "Pork Egg Foo Young", "Moo Goo Gai Pan", "Pork Lo Mein", "Chicken Lo Mein", "Beef Lo Mein", "Chicken Almond", "Pork with Chinese Vegetable", "Sesame Chicken", "General Tso's Chicken", "Hunan Chicken", "Hunan Beef", "Sichuan Chicken", "Sichuan Beef", "Shrimp with Cashew Nuts", "Kung Pao Chicken", "Shrimp Lo Mein", "Shrimp Chop Suey", "Chicken with Broccoli", "Beef with Broccoli", "Sweet and Sour Chicken", "Sweet and Sour Pork", "Honey Chicken", "Chicken with Garlic Sauce", "Beef with Garlic Sauce", "Pork with Garlic Sauce", "Beef with Snow Peas", "Chicken with Snow Peas"]
-          </script>
-
-      </section>
-
-
     </header>
+    <main>
+      <section class="order-options">
+        <article class="order-options--content">
+          <h3 class="mb-3">Order Online Here</h3>
+          <a href="#" class="btn btn--main btn--3d">Order Here</a>
+        </article>
+        <article class="order-options--content">
+          <h3>Order Over the Phone</h3>
+          <a href="tel:305-872-8861" class="telephone-a">Tel: (305) 872-8861</a>
+          <a href="tel:305-872-8862" class="telephone-a">Tel: (305) 872-8862</a>
+        </article>
+      </section>
+      <section class="hours"></section>
+      <section class="menu container" id="menu">
+        <header class="menu-header">
+          <h2>Takeout Menu</h2>
+          <h5 class="menu-header--sub">*🌶 means spicy</h5>
+        </header>
+        <section class="menu-list border rounded p-5 row">
+          <div class="col-12 col-md-4 col-xl-3">
+            <article class="menu-category">
+              <h4>Diet Dish</h4>
+              <ul>
+                <li>Steamed Mixed Vegetable</li>
+                <li>Steamed Chicken with Broccoli</li>
+                <li>Steamed Shrimp with Mixed Vegetables</li>
+                <li>Steamed Chicken with Mixed Vegetables</li>
+                <li>Steamed Shrimp with Broccoli</li>
+                <li>Steamed Mix Vegetable & Tofu</li>
+              </ul>
+            </article>
+            <article class="menu-category">
+              <h4>Drinks</h4>
+              <ul>
+                <li>Bottle Water</li>
+                <li>Coke</li>
+                <li>Sprite</li>
+                <li>Diet Coke</li>
+                <li>Pepsi</li>
+                <li>Mountain Dew</li>
+              </ul>
+            </article>
+            <article class="menu-category">
+              <h4>Side Order</h4>
+              <ul>
+                <li>Fried Noodle</li>
+                <li>Half Pint of Mustard</li>
+                <li>Half Pint of Duck Sauce</li>
+                <li>Half Pint of Garlic Sauce</li>
+                <li>Half Pint of Hot Chili Oil</li>
+                <li>Fortune Cookies</li>
+              </ul>
+            </article>
+            <article class="menu-category">
+              <h4>Lunch Special</h4>
+              <ul>
+                <li>Vegetable Delight</li>
+                <li>Chicken Chow Mein</li>
+                <li>Pork Chow Mein</li>
+                <li>Chicken Egg Foo Young</li>
+                <li>Pork Egg Foo Young</li>
+                <li>Moo Goo Gai Pan</li>
+                <li>Pork Lo Mein</li>
+                <li>Chicken Lo Mein</li>
+                <li>Beef Lo Mein</li>
+                <li>Chicken Almond</li>
+                <li>Pork with Chinese Vegetable</li>
+                <li class="spicy">Sesame Chicken</li>
+                <li class="spicy">General Tso's Chicken</li>
+                <li class="spicy">Hunan Chicken</li>
+                <li class="spicy">Hunan Beef</li>
+                <li class="spicy">Sichuan Chicken</li>
+                <li class="spicy">Sichuan Beef</li>
+                <li>Shrimp with Cashew Nuts</li>
+                <li class="spicy">Kung Pao Chicken</li>
+                <li>Shrimp Lo Mein</li>
+                <li>Shrimp Chop Suey</li>
+                <li>Chicken with Broccoli</li>
+                <li>Beef with Broccoli</li>
+                <li>Sweet and Sour Chicken</li>
+                <li>Sweet and Sour Pork</li>
+                <li>Honey Chicken</li>
+                <li class="spicy">Chicken with Garlic Sauce</li>
+                <li class="spicy">Beef with Garlic Sauce</li>
+                <li class="spicy">Pork with Garlic Sauce</li>
+                <li>Beef with Snow Peas</li>
+                <li>Chicken with Snow Peas</li>
+              </ul>
+            </article>
+          </div>
+          <div class="col-12 col-md-4 col-xl-3">
+            <article class="menu-category">
+              <h4>Chicken</h4>
+              <ul>
+                <li>Moo Goo Gai Pan</li>
+                <li>Chicken with Almonds</li>
+                <li>Chicken with Cashew Nuts</li>
+                <li class="spicy">Curry Chicken</li>
+                <li>Chicken with Broccoli</li>
+                <li class="spicy">Kung Pao Chicken</li>
+                <li class="spicy">Hunan Chicken</li>
+                <li class="spicy">Chicken with Garlic Sauce</li>
+                <li class="spicy">Orange Chicken</li>
+                <li class="spicy">Muk Shu Chicken(with Pancake)</li>
+                <li class="spicy">General Tso's Chicken</li>
+                <li class="spicy">Sesame Chicken</li>
+                <li>Chicken with Snow Peas</li>
+                <li>Cantonese Chicken Chow Mein</li>
+                <li>Lemon Chicken</li>
+                <li class="spicy">Sichuan Chicken</li>
+              </ul>
+            </article>
+            <article class="menu-category">
+              <h4>Pork</h4>
+              <ul>
+                <li class="spicy">Pork with Garlic</li>
+                <li class="spicy">Moo Shu Pork(with Pancakes)</li>
+                <li>Roast Pork with Mixed Vegetable</li>
+                <li class="spicy">Pork in Szechuan Sauce</li>
+                <li>Roast Pork with Snow Peas</li>
+              </ul>
+            </article>
+            <article class="menu-category">
+              <h4>Lo Mein</h4>
+              <ul>
+                <li>Vegetable Lo Mein</li>
+                <li>Roast Pork Lo Mein</li>
+                <li>Chicken Lo Mein</li>
+                <li>Shrimp Lo Mein</li>
+                <li>Beef Lo Mein</li>
+                <li>Seafood Lo Mein</li>
+                <li>China Garden Lo Mein</li>
+              </ul>
+            </article>
+            <article class="menu-category">
+              <h4>Chow Mein</h4>
+              <ul>
+                <li>Chicken Chow Mein Pint/Quart</li>
+                <li>Roast Pork Chow Mein Pint/Quart</li>
+                <li>Vegetable Chow Mein Pint/Quart</li>
+                <li>Shrimp Chow Mein Pint/Quart</li>
+                <li>Beef Chow Mein Pint/Quart</li>
+                <li>China Garden Chow Mein Pint/Quart</li>
+              </ul>
+            </article>
+            <article class="menu-category">
+              <h4>Chop Suey</h4>
+              <ul>
+                <li>Chicken Chop Suey Pint/Quart</li>
+                <li>Roast Pork Chop Suey Pint/Quart</li>
+                <li>Vegetable Chop Suey Pint/Quart</li>
+                <li>Shrimp Chop Suey Pint/Quart</li>
+                <li>Beef Chop Suey Pint/Quart</li>
+                <li>Seafood Chop Suey Pint/Quart</li>
+              </ul>
+            </article>
+          </div>
+          <div class="col-12 col-md-4 col-xl-3">
+            <article class="menu-category">
+              <h4>Beef</h4>
+              <ul>
+                <li>Beef with Chinese Vegetables</li>
+                <li>Beef with Bean Sprouts</li>
+                <li>Beef with Broccoli</li>
+                <li>Beef with Snow Peas</li>
+                <li>Beef with Mushroom</li>
+                <li>Beef with Black Bean Sauce</li>
+                <li>Beef with Oyster Sauce</li>
+                <li class="spicy">Beef with Garlic Sauce</li>
+                <li class="spicy">Hunan Beef</li>
+                <li class="spicy">Szechuan Beef</li>
+                <li class="spicy">Mongolian Beef</li>
+                <li class="spicy">Orange Beef</li>
+                <li>Cantonese Beef Chow Mein</li>
+                <li>Pepper Steak with Onion</li>
+              </ul>
+            </article>
+            <article class="menu-category">
+              <h4>Chef Special</h4>
+              <ul>
+                <li>Happy Family</li>
+                <li class="spicy">Vegetable with Fried Tofu</li>
+                <li class="spicy">Eggplant with Garlic Sauce</li>
+                <li class="spicy">Szechuan Vegetable</li>
+                <li class="spicy">Four Seasons</li>
+                <li class="spicy">Chicken & Shrimp in Hunan Style</li>
+                <li>Vegetables Delight with Tofu</li>
+                <li class="spicy">Broccoli with Garlic Sauce</li>
+              </ul>
+            </article>
+            <article class="menu-category">
+              <h4>Seafood</h4>
+              <ul>
+                <li>Shrimp with Chinese Vegetables</li>
+                <li>Jumbo Shrimp with Lobster Sauce</li>
+                <li>Shrimp with Cashew Nuts</li>
+                <li>Shrimp with Broccoli</li>
+                <li>Shrimp with Black Bean Sauce</li>
+                <li class="spicy">Curry Shrimp with Onion</li>
+                <li>Shrimp with Oyster Sauce</li>
+                <li>Seafood Delight</li>
+                <li class="spicy">Kung Pao Shrimp</li>
+                <li class="spicy">Scallops with Garlic Sauce</li>
+                <li class="spicy">Hunan Shrimp</li>
+              </ul>
+            </article>
+            <article class="menu-category">
+              <h4>Sweet & Sour</h4>
+              <ul>
+                <li>Honey Chicken</li>
+                <li>Sweet & Sour Pork</li>
+                <li>Sweet & Sour Shrimp</li>
+                <li>Sweet & Sour Chicken</li>
+                <li>Sweet & Sour Supreme</li>
+              </ul>
+            </article>
+          </div>
+          <div class="col-12 col-md-4 col-xl-3">
+            <article class="menu-category">
+              <h4>Appetizer</h4>
+              <ul>
+                <li>Spring Roll(2)</li>
+                <li>Vegetarian Spring Roll(2)</li>
+                <li>Egg Roll(2)</li>
+                <li>Shrimp Toast(4)</li>
+                <li>BBQ Spare Ribs Small/Large</li>
+                <li>Boneless BBQ Rib Small/Large</li>
+                <li>Chinese Roast Pork Small/Large</li>
+                <li>Fried Wonton</li>
+                <li>Fantail Shrimp(5)</li>
+                <li>Chicken Wing</li>
+                <li>Fried/Steamed Dumpling(8)</li>
+                <li>BBQ Steak(2)</li>
+                <li>Krab Rangoon(8)</li>
+                <li>Pu-Pu Platter</li>
+              </ul>
+            </article>
+            <article class="menu-category">
+              <h4>Soup</h4>
+              <ul>
+                <li>Wonton Soup Pint/Quart</li>
+                <li>Egg Drop Soup Pint/Quart</li>
+                <li>Chicken Rice/Noodle Soup Pint/Quart</li>
+                <li class="spicy">Hot & Sour Soup Pint/Quart</li>
+                <li>Subgum Wonton Soup</li>
+                <li>Vegetable Soup</li>
+              </ul>
+            </article>
+
+            <article class="menu-category">
+              <h4>Chow Mei Fun</h4>
+              <ul>
+                <li>Vegetable Chow Mei Fun</li>
+                <li>Roast Pork Chow Mei Fun</li>
+                <li>Chicken Chow Mei Fun</li>
+                <li>Shrimp Chow Mei Fun</li>
+                <li>Beef Chow Mei Fun</li>
+                <li>Seafood Chow Mei Fun</li>
+                <li>China Garden Chow Mei Fun</li>
+              </ul>
+            </article>
+            <article class="menu-category">
+              <h4>Egg Foo Young</h4>
+              <ul>
+                <li>Roast Pork Chow Mei Fun</li>
+                <li>Vegetable Chow Mei Fun</li>
+                <li>Shrimp Chow Mei Fun</li>
+                <li>Chicken Chow Mei Fun</li>
+                <li>Ham Chow Mei Fun</li>
+                <li>China Garden Chow Mei Fun</li>
+              </ul>
+            </article>
+
+            <article class="menu-category">
+              <h4>Fried Rice</h4>
+              <ul>
+                <li>Steamed Rice Pint/Quart</li>
+                <li>Roast Pork Fried Rice Pint/Quart</li>
+                <li>Vegetable Fried Rice Pint/Quart</li>
+                <li>Chicken Fried Rice Pint/Quart</li>
+                <li>Shrimp Fried Rice Pint/Quart</li>
+                <li>Beef Fried Rice Pint/Quart</li>
+                <li>Subgum Fried Rice Pint/Quart</li>
+                <li>Seafood Fried Rice Pint/Quart</li>
+                <li>Special Fried Rice Pint/Quart</li>
+              </ul>
+            </article>
+          </div>
+          <div class="col-12">
+            <article class="menu-category special-combination-platters p-3">
+              <h4>Special Combination Platters</h4>
+              <div class="d-flex">
+                <ul class="me-4">
+                  <li>Chicken Chow Mein</li>
+                  <li>Shrimp Chow Mein</li>
+                  <li>Pork Egg Foo Young</li>
+                  <li>Moo Goo Gai Pan</li>
+                  <li>Green Pepper Steak</li>
+                  <li>Barbecued Spare Ribs</li>
+                  <li>Shrimp with Lobster Sauce</li>
+                </ul>
+                <ul>
+                  <li>Roast Pork w. Chinese Vegetables</li>
+                  <li>Sweet & Sour Pork</li>
+                  <li>Sweet & Sour Chicken</li>
+                  <li>Chicken with Broccoli</li>
+                  <li>Beef with Broccoli</li>
+                  <li class="spicy">General Tso's Chicken</li>
+                  <li class="spicy">Kung Pao Chicken</li>
+                  <br />
+                </ul>
+              </div>
+            </article>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

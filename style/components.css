@@ -20,12 +20,6 @@
   align-items: center;
 }
 
-.nav--links {
-  padding: 1rem;
-  text-decoration: none;
-  color: var(--color-dark);
-}
-
 .hours {
   display: flex;
   align-items: center;
@@ -47,6 +41,10 @@
 }
 
 .nav-link:hover {
+  color: var(--color-main);
+}
+
+.nav-link:active {
   color: var(--color-main);
 }
 
@@ -93,8 +91,13 @@
 }
 
 /* Menu */
+
+.menu-body {
+  background-color: var(--color-gray);
+}
 .menu {
   margin-inline: auto;
+  margin-top: 5rem;
 }
 
 .menu-header {
@@ -108,6 +111,7 @@
 .menu-list {
   display: flex;
   flex-wrap: wrap;
+  background-color: var(--color-light);
 }
 
 /* Order options */

@@ -133,3 +133,12 @@
   flex-direction: column;
   height: 17rem;
 }
+
+.store {
+  height: 12rem;
+  background-image: url(../img/goodeats-yqr-O0AsEdqEzPQ-unsplash.JPG);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
